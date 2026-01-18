@@ -116,15 +116,16 @@ const Navbar = () => {
             </Link>
           ))}
 
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            href="/contact"
-            onClick={() => setOpen(false)}
-            className="bg-gradient-to-r from-yellow-400 to-pink-500 
-                       text-black font-bold text-center px-5 py-2 rounded-full"
-          >
-            Hire Me
-          </motion.a>
+          <Link to="/contact" onClick={() => setOpen(false)}>
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    className="bg-gradient-to-r from-yellow-400 to-pink-500 
+               text-black font-bold text-center px-5 py-2 rounded-full cursor-pointer"
+  >
+    Hire Me
+  </motion.div>
+</Link>
+
         </motion.div>
       )}
     </nav>
