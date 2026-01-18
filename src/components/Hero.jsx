@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import amanPhoto from "../assets/images/aman.png";
+import { Link } from "react-router-dom";
+
 
 const texts = [
   "Android Developer",
@@ -57,22 +59,23 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a
-              href="/contact"
-              className="bg-gradient-to-r from-yellow-400 to-pink-500 
-                         text-black px-6 py-3 rounded-lg font-semibold 
-                         hover:scale-105 transition shadow-lg text-center"
-            >
-              Hire Me
-            </a>
+            <Link
+  to="/contact"
+  className="bg-gradient-to-r from-yellow-400 to-pink-500 
+             text-black px-6 py-3 rounded-lg font-semibold 
+             hover:scale-105 transition shadow-lg text-center"
+>
+  Hire Me
+</Link>
 
-            <a
-              href="/projects"
-              className="bg-white text-indigo-700 px-6 py-3 
-                         rounded-lg font-semibold hover:scale-105 transition text-center"
-            >
-              View Projects
-            </a>
+<Link
+  to="/projects"
+  className="bg-white text-indigo-700 px-6 py-3 
+             rounded-lg font-semibold hover:scale-105 transition text-center"
+>
+  View Projects
+</Link>
+
           </div>
         </motion.div>
 
