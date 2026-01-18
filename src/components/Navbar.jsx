@@ -70,17 +70,20 @@ const Navbar = () => {
           </div>
 
           {/* Hire Me Button */}
-          <motion.a
-            whileHover={{ scale: 1.08 }}
-            href="/contact"
-            className="relative overflow-hidden
-              bg-gradient-to-r from-yellow-400 to-pink-500
-              text-black font-bold px-7 py-2 rounded-full
-              shadow-lg"
-          >
-            <span className="relative z-10">Hire Me</span>
-            <span className="absolute inset-0 bg-white/20 blur-xl"></span>
-          </motion.a>
+          {/* Hire Me Button - FIXED */}
+<Link to="/contact">
+  <motion.div
+    whileHover={{ scale: 1.08 }}
+    className="relative overflow-hidden
+      bg-gradient-to-r from-yellow-400 to-pink-500
+      text-black font-bold px-7 py-2 rounded-full
+      shadow-lg cursor-pointer"
+  >
+    <span className="relative z-10">Hire Me</span>
+    <span className="absolute inset-0 bg-white/20 blur-xl"></span>
+  </motion.div>
+</Link>
+
         </div>
 
         {/* MOBILE HAMBURGER */}
